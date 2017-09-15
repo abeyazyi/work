@@ -1,0 +1,27 @@
+Use GitBash tool on Windows
+
+- See status
+git status
+
+- Move untracked file to not staged for commit section
+git add PARTICULAR_FILE 
+
+- make not staged file staged ( ready for commit)
+git add src/* 
+
+- commit ( to local )
+git commit -m "merge message"
+
+- pull repository changes
+git pull
+
+if after pull there are merge errors 
+git mergetool
+after merge go back to commit step again
+
+- if git pull shows no conflit
+git push
+
+-- revert back all local changes
+git reset --hard
+
