@@ -14,6 +14,7 @@ git commit -m "merge message"
 
 - pull repository changes
 git pull
+* Jump to ssh-keygen section if you get repository not found error
 
 if after pull there are merge errors 
 git mergetool
@@ -24,4 +25,19 @@ git push
 
 -- revert back all local changes
 git reset --hard
+
+
+-- generate ssh key
+ssh-keygen -p
+* This will create id_rsa* files in your home directory, keep the location untouched otherwise you need to provide location to files in following commands
+* After this step go to github settings and add ssh key, give it a name and copy id_rsa.pub file created in the previous step (public key)
+
+-- start ssh agent
+ssh-agent
+
+-- load ssh files
+ssh-add
+
+-- change origin : if you cloned the repository using HTTPS you need to switch to SSH
+git remote set-url origin git@github.com:corelogic/watchlist-service.git
 
