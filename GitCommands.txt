@@ -42,4 +42,5 @@ ssh-add
 git remote set-url origin git@github.com:corelogic/watchlist-service.git
 
 -- Sourcetree sucks
+-- Sourcetree sucks V2
 
